@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 """
 Vucut Kitle İndeksi Hesaplama
 
