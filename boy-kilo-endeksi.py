@@ -17,7 +17,7 @@ def hesapla():
     boy = float(input("Boyunuzu giriniz:"))
     kilo = float(input("Kilonuzu giriniz:"))
     endeks = kilo/((boy/100)**2)
-    print(f"Endeksiniz: {endeks}")
+    print(f"Endeks Ortalamaniz: {endeks}")
 
     if endeks <= 18.4:
         print ("Endeksiniz: Zayif")
