@@ -1,23 +1,5 @@
-# -*- coding: utf-8 -*-
 
-"""
-Vucut Kitle İndeksi Hesaplama
-
-Zayif --- 0-18.4
-Normal --- 18.4-24.9
-Fazla Kilolu --- 25.0-29.9
-Sisman --- 30.0-34.9
-
-Boy, kilo
-Kitle İndeksiniz = Kilo/(boy*boy)
-
-"""
-
-def hesapla():
-    boy = float(input("Boyunuzu giriniz:"))
-    kilo = float(input("Kilonuzu giriniz:"))
-    endeks = kilo/((boy/100)**2)
-     
+    
 # -*- coding: utf-8 -*-
 
 """
