@@ -47,15 +47,3 @@ def hesapla():
     
     
 hesapla()
-
-    if endeks <= 18.4:
-        print ("Endeksiniz: Zayif")
-    elif endeks >= 18.5 and endeks <= 24.9:
-        print ("Endeksiniz: Normal")
-    elif endeks >= 25.0 and endeks <= 29.9:
-        print ("Endeksiniz: Fazla Kilolu")
-    elif endeks >= 30.0 and endeks <= 34.9:
-        print ("Endeksiniz: Sisman(Obez)")
-    
-    
-hesapla()
