@@ -1,17 +1,30 @@
+"""
+Vücut Kitle İndeksi Hesaplama
 
-print("VÜCUT KİTLE ENDEKSİ HESAPLAMA PROGRAMI 💪")
-boy = float(input("Boy (m):"))
-kilo = int(input("Kilo (kg):"))
- 
-endeks  = kilo/(boy*boy)
- 
-if endeks <18:
-    print("\n zayıf VKİ:{}".format(endeks))
-elif endeks >= 18 and endeks <25 :
-    print("\n normal VKİ:{}".format(endeks))
-elif endeks >= 25 and endeks <30:
-    print("\n kilolu VKİ:{}".format(endeks))
-elif endeks >= 30 and endeks <35:
-    print("\n obez VKİ:{}".format(endeks))
-else:
-    print("\n ciddi obez VKİ:{}".format(endeks))
+Zayıf --- 0-18.4
+Normal --- 18.4-24.9
+Fazla Kilolu --- 25.0-29.9
+Şişman --- 30.0-34.9
+
+Boy, kilo
+Kitle İndeksiniz = Kilo/(boy*boy)
+
+"""
+
+def hesapla():
+    boy = float(input("Boyunuzu giriniz:"))
+    kilo = float(input("Kilonuzu giriniz:"))
+    endeks = kilo/((boy/100)**2)
+    print("Endeksiniz:",endeks)
+
+    if endeks <= 18.4:
+        print ("Endeksiniz: Zayıf")
+    elif endeks >= 18.5 and endeks <= 24.9:
+        print ("Endeksiniz: Normal")
+    elif endeks >= 25.0 and endeks <= 29.9:
+        print ("Endeksiniz: Fazla Kilolu")
+    elif endeks >= 30.0 and endeks <= 34.9:
+        print ("Endeksiniz: Şişman(Obez)")
+    
+    
+hesapla()
